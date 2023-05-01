@@ -26,6 +26,7 @@ function ConsumerForm() {
       zip: "",
       clothing: "",
       budget: "",
+      description: "",
       images: [],
     },
   });
@@ -227,6 +228,19 @@ function ConsumerForm() {
                 />
               );
             }}
+          />
+        </Grid>
+        <Grid item xs={gridSize}>
+          <TextInput
+            control={control}
+            register={register}
+            multiline
+            id="description"
+            name="description"
+            label="Description (optional)"
+            fullWidth
+            autoComplete="description"
+            variant="standard"
           />
         </Grid>
       </Grid>
